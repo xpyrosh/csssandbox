@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model / Margin & Padding</title>
+    <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+            /* box sizing to make padding not make width longer */
+            box-sizing: border-box;
+        }
+        
+        .box {
+            background: #f4f4f4;
+            border: 2px solid red;
+            width: 500px;
+
+            /* padding sides */
+            padding: 20px;
+
+            /* padding per side - overides above */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            /* quicker padding top right bottom left */
+            padding: 10px 20px 10px 20px;
+
+            /* shorter hand - top/bottom right/left */
+            padding: 10px 20px
+
+            /* margin sides */
+            margin: 20px;
+
+            /* margin per side - overides above */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            /* quicker margin top right bottom left */
+            margin: 10px 20px 10px 20px;
+
+            /* shorter hand - top/bottom right/left */
+            margin: 10px 20px
+        }
+
+        .box h3 {
+            padding-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minima alias iure quidem consequuntur libero? Sapiente perferendis fugiat neque quis?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minima alias iure quidem consequuntur libero? Sapiente perferendis fugiat neque quis?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minima alias iure quidem consequuntur libero? Sapiente perferendis fugiat neque quis?
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, minima alias iure quidem consequuntur libero? Sapiente perferendis fugiat neque quis?
+        </p>
+    </div>
+</body>
+</html>

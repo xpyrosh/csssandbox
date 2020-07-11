@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <!-- Using fonts.google.com for unique fonts first link the font (or import) -->
+    <!-- Then use the appropriate font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            /* If you aren't using web safe fonts you must include the font file or link to it */
+            font-family: 'Grenze Gotisch', cursive;
+            font-size: 20px;
+            /* em & rem absolute units */
+            line-height: 1.6em;
+        }
+
+        #welcome p span {
+            font-weight: bold;
+        }
+
+        #about p span {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <!-- Use class instead of id -->
+        <h2 class="primary-heading">Welcome</h2>
+        <p>
+            Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Nesciunt, laudantium.
+        </p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum <span> sit amet </span>consectetur adipisicing elit. Nesciunt rem odio ad.
+        </p>
+    </div>
+</body>
+</html>

@@ -7,50 +7,95 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet"/>
     <style>
+
+        * {
+            /* Add border-box for box-sizing so padding doesn't change width */
+            /* reset margins & paddings */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body{
             font-family: 'Raleway', sans-serif;
             background: #344a72;
-        }
-
-        .form-wrap h1{
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 0;
-        }
-
-        .form-wrap p{
-            text-align: center;
-            padding: 5px;
-            margin: 10px 10px;
-        }
-
-        .form-group{
-            align-items: center;
-        }
-
-        .btn {
-            background-color: #278a4d;
             color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 100px;
-            position: relative;
-        }
-
-        .btn:hover{
-            cursor: pointer;
-            background-color: #50ad74;
+            line-height: 1.8;
         }
 
         #container{
-            background: #fff;
-            box-sizing: border-box;
-            width: 350px;
-            height: 600px;
-            margin: auto;
-            margin-top: 10%;
-            border: 1px solid #444;
+            /* use max width for responsive desgin rather than hardcoding dimensions */
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            
         }
+
+        a{
+            /* removing link underlines */
+            text-decoration: none;
+        }
+
+        .form-wrap{
+            background: #fff;
+            padding: 15px 25px;
+            color: #333;
+        }
+
+        .form-wrap h1,
+        .form-wrap p{
+            text-align: center;
+        }
+
+        .form-wrap .form-group{
+            margin-top: 15px;
+        }
+
+        .form-wrap .form-group label{
+            /* making it block takes it off the same line as the input field */
+            color: #666;
+            display: block;
+        }
+
+        .form-wrap .form-group input{
+            width: 100%;
+            padding: 10px;
+            border: #ddd 1px solid;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #50ad74;
+            display: block;
+            width: 100%;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+ 
+        .btn:hover{
+            cursor: pointer;
+            background-color: #49c1a2;
+        }
+
+        .form-wrap .bottom-text {
+            font-size: 13px;
+            margin-top: 20px;
+
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #49c1a2;
+        }
+
+        
     </style>
 </head>
 <body>

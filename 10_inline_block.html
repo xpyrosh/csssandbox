@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block Styling</title>
+    <style>
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+        }
+
+        img {
+            /* Cannot do margin auto on an inline element */
+            margin: auto;
+            /* Make the img a block level */
+            display: block;
+        }
+
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+            width: 32%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Tech</a></li>
+        <li><a href="#">Biz</a></li>
+        <li><a href="#">Style</a></li>
+        <li><a href="#">Food</a></li>
+    </ul>
+
+    <br><br>
+
+    <img src="./img/leaf.png" alt="My Leaf?">
+    
+    <br><br>
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure maiores officia aliquid consequuntur et est tenetur mollitia, non ea.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure maiores officia aliquid consequuntur et est tenetur mollitia, non ea.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure maiores officia aliquid consequuntur et est tenetur mollitia, non ea.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iure maiores officia aliquid consequuntur et est tenetur mollitia, non ea.</p>
+    </div>
+
+</body>
+</html>
